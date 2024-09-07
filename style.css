@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem; 
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #007bff; 
+    border-radius: 15px; 
+    padding: 30px;
+    gap: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 90%;
+    max-width: 500px; 
+}
+
+#generate {
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#generate:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+#label {
+    padding: 8px;
+    color: #333; 
+    font-weight: bold;
+    font-size: 1.2rem; 
+}
+
+#url {
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+}
+
+#url::placeholder {
+    text-align: center;
+    color: #aaa; 
+}
+
+#btn {
+    background-color: #0ef344; 
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #25af43; 
+}
+
+#shortened-url {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa; 
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#copy-btn {
+    background-color: #17a2b8; 
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#copy-btn i {
+    margin-right: 8px;
+}
+
+#copy-btn:hover {
+    background-color: #117a8b; 
+}
+
+#copy-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 200, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 0.9rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}

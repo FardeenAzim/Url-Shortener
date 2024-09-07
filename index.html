@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>URL Shortener</title>
+</head>
+<body>
+<div class="container">
+    <label>
+        <h1>URL Shortener</h1>
+    </label>
+    <label>
+        <h2>Paste the URL to be Shortened</h2>
+    </label>
+    <input type="text" id="url" placeholder="Enter your URL here!">
+    <button id="btn" onclick="shortUrl()">Generate</button>
+    <input type="text" id="shortened-url" readonly placeholder="">
+    <button id="copy-btn"><i class="material-icons">content_copy</i></button>
+    <div id="results"></div>
+</div> 
+
+<script src="script.js"></script>
+</body>
+</html>
